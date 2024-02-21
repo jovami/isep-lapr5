@@ -12,7 +12,8 @@ jobs:
   mdr_build:
     name: MDR Build
     runs-on: ubuntu-latest
-
+    if: github.repository_owner == 'Departamento-de-Engenharia-Informatica'
+    
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
@@ -26,7 +27,8 @@ jobs:
   mdr_test:
     name: MDR Testing
     runs-on: ubuntu-latest
-
+    if: github.repository_owner == 'Departamento-de-Engenharia-Informatica'
+    
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
@@ -41,7 +43,8 @@ jobs:
   spa_build:
     name: SPA Build
     runs-on: ubuntu-latest
-
+    if: github.repository_owner == 'Departamento-de-Engenharia-Informatica'
+    
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
@@ -55,7 +58,8 @@ jobs:
   spa_test:
     name: SPA Testing
     runs-on: ubuntu-latest
-
+    if: github.repository_owner == 'Departamento-de-Engenharia-Informatica'
+    
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
@@ -70,7 +74,8 @@ jobs:
   mdt_build:
     name: MDT Build
     runs-on: ubuntu-latest
-
+    if: github.repository_owner == 'Departamento-de-Engenharia-Informatica'
+    
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
@@ -89,7 +94,8 @@ jobs:
   mdt_test:
     name: MDT Testing
     runs-on: ubuntu-latest
-
+    if: github.repository_owner == 'Departamento-de-Engenharia-Informatica'
+    
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
